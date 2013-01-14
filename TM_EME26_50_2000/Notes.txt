@@ -1,0 +1,10 @@
+TM_EME26_50_2000
+
+50 Topic Model of 26 Early Middle English texts cut into 2000-word chunks. All_Stopwords.txt applied. Iterations: 500.
+
+Notes: This model has some fairly coherent topics, although I am not sure whether some should be split or collapsed. Many topics align largely to single texts due to dialect/scribal peculiarities; vocabulary in individual topics assigned to other texts tends to fall of precipitously. Even in chunks with a high frequency of topics words, the number tends to be no more than about 400 out of 2000. This suggests that 2000-word chunks is probably too big to identify discourses within chunks unless the top N words in the topic all obviously cluster in some part of the chunk.
+
+Recommendations: 
+	1. Re-do the experiment with 20 and 100 topics to see what produces better results.
+	2. Re-chunk at 1000 words.
+	3. Since the model produces some lemmatisation, fork the corpus to a version which collapses orthographic variants in the same topics (but not morphological variants, as that is not the general practice for Modern English).
